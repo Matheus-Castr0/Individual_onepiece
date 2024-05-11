@@ -7,7 +7,6 @@
 }
 
 body{
-    width: 100vw;
     height: 100vh;
     font-size: 20px;
 }
@@ -16,17 +15,19 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 80px;
     background-color: #3DADD9;
     box-shadow: 0px 0px 10px 5px #282828;
+    z-index: 2;
+    position: relative;
 }
 
 #header_container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 60vw;
+    width: 60%;
 }
 
 .navbar ul{
@@ -63,4 +64,49 @@ header{
 .navbar ul li a:hover::after{
     width: 100%;
     transition: ease-in-out 0.5s;
+}
+
+main .summary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 770px;
+    background-image: url(../../assets/images/background_home.png);
+}
+
+.carosel{
+    display: flex;
+    width: 954px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px 5px #1A1A1A;
+}
+
+.carosel_texts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    background-color: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 20px 0 0 20px;
+}
+
+.carosel_texts p{
+    font-size: 20px;
+    margin: 20px;
+}
+
+.carosel_imgs{
+    width: 50%;
+    border-radius: 0 20px 20px 0;
+    border: 2px solid #000000;
+}
+
+.carosel_imgs img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
 }
