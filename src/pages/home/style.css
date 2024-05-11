@@ -110,3 +110,146 @@ main .summary{
     height: 100%;
     border-radius: 0 20px 20px 0;
 }
+
+
+.chars{
+    height: 899px;
+    background-color: #011126;
+}
+
+.charsAbout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chars h2{
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.charsIcons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 820px;
+    margin: 50px 0;
+}
+
+.charsIcons div{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.charsIcons img{
+    width: 80px;
+}
+
+.charsIcons #jollyroger_luffy:hover{
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+    filter: drop-shadow(0 0 5px #FF0000);
+}
+
+.charsIcons #jollyroger_zoro:hover{
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+    filter: drop-shadow(0 0 5px #00FF00);
+}
+
+.charsIcons #jollyroger_nami:hover{
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+    filter: drop-shadow(0 0 5px #FDAE04);
+}
+
+.charsIcons #jollyroger_usopp:hover{
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+    filter: drop-shadow(0 0 5px #7E6B09);
+}
+
+.charsIcons #jollyroger_sanji:hover{
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+    filter: drop-shadow(0 0 5px #FFFF00);
+}
+
+.charsIcons #jollyroger_chopper:hover{
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+    filter: drop-shadow(0 0 5px #E998DE);
+}
+
+.charsIcons #jollyroger_robin:hover{
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+    filter: drop-shadow(0 0 5px #A72AFA);
+}
+
+.charsIcons #jollyroger_franky:hover{
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+    filter: drop-shadow(0 0 5px #13E3F7);
+}
+
+.charsIcons #jollyroger_brook:hover{
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+    filter: drop-shadow(0 0 5px #6d6d6d);
+}
+
+.charsIcons #jollyroger_jinbe:hover{
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+    filter: drop-shadow(0 0 5px #0000FF);
+}
+
+.charsDescription{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1450px;
+    height: 524px;
+    padding: 0 40px;
+    background: rgb(212,194,170);
+    background: radial-gradient(circle, rgba(212,194,170,1) 0%, rgba(165,139,118,1) 100%);
+    border: 2px solid #110000;
+    box-shadow: 0 0 10px 0 #555555;
+}
+
+.poster{
+    border: 3px solid #38261A;
+}
+
+.weapon img{
+    width: 247px;
+    height: 259px;
+    border: 3px solid #38261A;
+    background-color: rgb(161, 167, 145, 40%);
+}
+
+.description,
+.weapon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description{
+    width: 80%;
+    margin: 0 40px;
+}
+
+.description p{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.description h3,
+.weapon h3{
+    font-weight: 400;
+}
