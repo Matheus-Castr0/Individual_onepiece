@@ -112,7 +112,8 @@ main .summary{
 }
 
 
-.chars{
+.chars,
+.extras{
     height: 899px;
     background-color: #011126;
 }
@@ -252,4 +253,88 @@ main .summary{
 .description h3,
 .weapon h3{
     font-weight: 400;
+}
+
+.extras{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.extras .tabs{
+    width: 65vw;
+    height: 520px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.extras .tabs .sign,
+.extras .tabs .guide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 355px;
+    background-color: #3DADD9;
+    border-radius: 20px;
+    box-shadow: 0 0 25px 0 rgba(000, 000, 000, 75%);
+}
+
+.extras .tabs .sagas:hover,
+.extras .tabs .guide:hover{
+    cursor: pointer;
+}
+
+.extras .tabs .sign p{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.extras .tabs .sign button{
+    width: 120px;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 80px;
+    background-color: #011126;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.extras .tabs .sign button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 #000000;
+}
+
+.extras .tabs .sign h3,
+.extras .tabs .guide h3{
+    padding: 20px;
+    text-align: center;
+}
+
+.extras .tabs .guide img{
+    height: 453px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0 0 20px 20px;
+}
+
+.extras .tabs .sagas{
+    display: flex;
+    flex-direction: column;
+    width: 355px;
+    background-image: url('../../assets/images/eastblue.jpg');
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 0 0 25px 0 rgba(000, 000, 000, 75%);
+}
+
+.extras .tabs .sagas h4{
+    padding: 10px 40px;
+    background-color: #3DADD9;
+    border-radius: 20px 20px 0 0;
+    text-align: center;
 }
