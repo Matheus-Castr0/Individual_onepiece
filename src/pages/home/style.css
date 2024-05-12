@@ -338,3 +338,13 @@ main .summary{
     border-radius: 20px 20px 0 0;
     text-align: center;
 }
+
+footer{
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    background-color: #A78455;
+    background-image: url('../../assets/images/rodape_line.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
