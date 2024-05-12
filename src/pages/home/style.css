@@ -347,4 +347,5 @@ footer{
     background-image: url('../../assets/images/rodape_line.svg');
     background-repeat: no-repeat;
     background-position: center;
+    box-shadow: -10px 0 20px 0 #000000;
 }
