@@ -68,7 +68,7 @@ header{
 
 
 main .eastblue{
-    height: 90vh;
+    height: 100vh;
     background-image: url('../../assets/images/marry.png');
     background-attachment: fixed;
     background-position: center;
@@ -80,7 +80,7 @@ main .eastblue{
 }
 
 main .alabasta{
-    height: 90vh;
+    height: 100vh;
     background-image: url('../../assets/images/alabastaBack.jpg');
     background-attachment: fixed;
     background-position: center;
@@ -92,7 +92,7 @@ main .alabasta{
 }
 
 main .skypiea{
-    height: 90vh;
+    height: 100vh;
     background-image: url('../../assets/images/skypieaBack.jpg');
     background-attachment: fixed;
     background-position: center;
@@ -104,7 +104,7 @@ main .skypiea{
 }
 
 main .water7{
-    height: 90vh;
+    height: 100vh;
     background-image: url('../../assets/images/Water7Back.jpg');
     background-attachment: fixed;
     background-position: center;
@@ -116,7 +116,7 @@ main .water7{
 }
 
 main .thrillerBark{
-    height: 90vh;
+    height: 100vh;
     background-image: url('../../assets/images/Thriller_Bark.webp');
     background-attachment: fixed;
     background-position: center;
@@ -128,7 +128,7 @@ main .thrillerBark{
 }
 
 main .marineford{
-    height: 90vh;
+    height: 100vh;
     background-image: url('../../assets/images/marinefordBack.jpg');
     background-attachment: fixed;
     background-position: center;
@@ -140,7 +140,7 @@ main .marineford{
 }
 
 main .ilhaPeixe{
-    height: 90vh;
+    height: 100vh;
     background-image: url('../../assets/images/Fish-Man.webp');
     background-attachment: fixed;
     background-position: center;
@@ -152,7 +152,7 @@ main .ilhaPeixe{
 }
 
 main .alianca{
-    height: 90vh;
+    height: 100vh;
     background-image: url('../../assets/images/dressrosaBack.jpg');
     background-attachment: fixed;
     background-position: center;
@@ -164,7 +164,7 @@ main .alianca{
 }
 
 main .yonkou{
-    height: 90vh;
+    height: 100vh;
     background-image: url('../../assets/images/yonkouBack.png');
     background-attachment: fixed;
     background-position: center;
@@ -176,7 +176,7 @@ main .yonkou{
 }
 
 main .final{
-    height: 90vh;
+    height: 100vh;
     background-image: url('../../assets/images/eggheadBack.avif');
     background-attachment: fixed;
     background-position: center;
@@ -185,6 +185,10 @@ main .final{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+main div .about .description p{
+    font-size: 18px;
 }
 
 main .eastblue .about,
@@ -197,8 +201,8 @@ main .alianca .about,
 main .yonkou .about,
 main .final .about,
 main .alabasta .about{
-    width: 65vw;
-    height: 65vh;
+    width: 85vw;
+    height: 85vh;
     background-color: #FFFFFF;
     display: flex;
 }
@@ -241,11 +245,11 @@ main .alianca .about .description,
 main .yonkou .about .description,
 main .final .about .description,
 main .alabasta .about .description{
-    width: 48vw;
+    width: 63vw;
     padding: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
 
 main .eastblue .about .description h3,
@@ -259,7 +263,7 @@ main .yonkou .about .description h3,
 main .final .about .description h3,
 main .alabasta .about .description h3{
     text-align: center;
-    padding: 10px 100px;
+    padding: 0 100px 5px 100px;
 }
 
 footer{
