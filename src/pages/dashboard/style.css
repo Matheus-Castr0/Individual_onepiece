@@ -1,0 +1,120 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    font-size: 20px;
+    display: flex;
+    background-color: #011126;
+}
+
+aside{
+    height: 100%;
+    width: 15%;
+    background-color: #3DADD9;
+    border-radius: 0 30px 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 20px 0;
+}
+
+aside .usuario{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+}
+
+aside .usuario .icone_usuario{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: aliceblue;
+}
+
+aside div.usuario h2{
+    margin-top: 10px;
+}
+
+aside button{
+    margin: 50px 0;
+    width: 160px;
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    border: none;
+    background: none;
+    justify-content: space-around;
+}
+
+aside button img{
+    width: 40px;
+}
+
+aside button:hover{
+    cursor: pointer;
+    color: #FF0000;
+}
+
+main{
+    height: 100%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+main .kpis{
+    display: flex;
+    justify-content: space-around;
+}
+
+main .kpis .tempo_gasto,
+main .kpis .tempo_restante,
+main .kpis .eps_restantes{
+    width: 305px;
+    height: 153px;
+    background-color: #C9C9C9;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+main .kpis .tempo_gasto h4,
+main .kpis .eps_restantes h4,
+main .kpis .tempo_restante h4{
+    text-align: center;
+}
+
+main .kpis .tempo_gasto div,
+main .kpis .eps_restantes div,
+main .kpis .tempo_restante div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid black;
+    height: 70%;
+}
+
+main .kpis .tempo_gasto div p,
+main .kpis .eps_restantes div p,
+main .kpis .tempo_restante div p{
+    font-size: 28px;
+    margin-left: 10px;
+}
+
+main .kpis .tempo_gasto img,
+main .kpis .eps_restantes img,
+main .kpis .tempo_restante img{
+    width: 80px;
+    height: 80px;
+}
