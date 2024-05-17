@@ -16,7 +16,7 @@ header{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 80px;
+    height: 10vh;
     background-color: #3DADD9;
     box-shadow: 0px 0px 10px 5px #282828;
     z-index: 2;
@@ -72,13 +72,14 @@ main .summary{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 770px;
+    height: 80vh;
     background-image: url(../../assets/images/background_home.png);
 }
 
 .carosel{
     display: flex;
-    width: 954px;
+    width: 60%;
+    height: 80%;
     border-radius: 20px;
     box-shadow: 0px 0px 30px 5px #1A1A1A;
 }
@@ -88,21 +89,26 @@ main .summary{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    width: 50%;
+    width: 70%;
     background-color: #FFFFFF;
     border: 2px solid #000000;
     border-radius: 20px 0 0 20px;
 }
 
+.carosel_texts img{
+    width: 50%;
+}
+
 .carosel_texts p{
     font-size: 20px;
-    margin: 20px;
+    margin: 0 20px;
 }
 
 .carosel_imgs{
-    width: 50%;
     border-radius: 0 20px 20px 0;
-    border: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    border-right: 2px solid #000000;
+    border-top: 2px solid #000000;
 }
 
 .carosel_imgs img{
@@ -213,7 +219,7 @@ main .summary{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 1450px;
+    width: 90%;
     height: 524px;
     padding: 0 40px;
     background: rgb(212,194,170);
@@ -222,13 +228,14 @@ main .summary{
     box-shadow: 0 0 10px 0 #555555;
 }
 
-.poster{
+.poster img{
+    width: 100%;
     border: 3px solid #38261A;
 }
 
 .weapon img{
-    width: 247px;
-    height: 259px;
+    width: 207px;
+    height: 219px;
     border: 3px solid #38261A;
     background-color: rgb(161, 167, 145, 40%);
 }
@@ -262,7 +269,7 @@ main .summary{
 }
 
 .extras .tabs{
-    width: 65vw;
+    width: 85vw;
     height: 520px;
     display: flex;
     justify-content: space-between;
