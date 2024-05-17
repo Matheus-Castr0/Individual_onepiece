@@ -20,68 +20,69 @@
     <main>
         <div class="container_cadastro">
 
-            <div class="cadastro">
-                <h2>CADASTRE-SE</h2>
-                <p>Crie uma conta e torne-se um pirata</p>
-                <div class="infos">
-                    <div class="inputs">
+                <div class="cadastro">
+                    <h2>CADASTRE-SE</h2>
+                    <p>Crie uma conta e torne-se um pirata</p>
+                    <div class="infos">
+                        <div class="inputs">
 
-                        <div>
-                            <img src="../../assets/images/icon_user.svg" alt="icone de usuario">
-                            <label for="ipt_nome">Primeiro Nome:</label>
+                            <div>
+                                <img src="../../assets/images/icon_user.svg" alt="icone de usuario">
+                                <label for="ipt_nome">Primeiro Nome:</label>
+                            </div>
+                            <input type="text" id="ipt_nome">
+
+                            <div>
+                                <img src="../../assets/images/icon_senha.svg" alt="icone de senha">
+                                <label for="ipt_senha">Senha:</label>
+                            </div>
+                            <input type="text" id="ipt_senha">
+
+                            <div>
+                                <label for="ipt_epAtual">Último Episódio Assistido:</label>
+                            </div>
+                            <input type="text" id="ipt_epAtual">
+
                         </div>
-                        <input type="text" id="ipt_nome">
+                        <div class="inputs">
 
-                        <div>
-                            <img src="../../assets/images/icon_senha.svg" alt="icone de senha">
-                            <label for="ipt_senha">Senha:</label>
+                            <div>
+                                <img src="../../assets/images/icon_email.svg" alt="icone de email">
+                                <label for="ipt_email">E-mail:</label>
+                            </div>
+                            <input type="text" id="ipt_email">
+
+                            <div>
+                                <img src="../../assets/images/icon_senha.svg" alt="icone de senha">
+                                <label for="ipt_confirmarSenha">Senha Novamente:</label>
+                            </div>
+                            <input type="text" id="ipt_confirmarSenha">
+
+                            <div>
+                                <label for="ipt_epsDia">Quantos Episódios Assiste por Dia:</label>
+                            </div>
+                            <input type="text" id="ipt_epsDia">
+
                         </div>
-                        <input type="text" id="ipt_senha">
-
-                        <div>
-                            <label for="ipt_epAtual">Último Episódio Assistido:</label>
+                        <div class="iconSelect">
+                            <label for="select_char">Escolha o icone do seu usuario:</label>
+                            <img src="../../assets/images/luffyFirstWanted.jpg" alt="imagem do usuario">
+                            <select name="charSelect" id="select_char">
+                                <option value="1">Luffy</option>
+                                <option value="2">Zoro</option>
+                                <option value="3">Nami</option>
+                                <option value="4">Usopp</option>
+                                <option value="5">Sanji</option>
+                                <option value="6">Chopper</option>
+                                <option value="7">Robin</option>
+                                <option value="8">Franky</option>
+                                <option value="9">Brook</option>
+                                <option value="10">Jinbe</option>
+                            </select>
                         </div>
-                        <input type="text" id="ipt_epAtual">
-
-                    </div>
-                    <div class="inputs">
-
-                        <div>
-                            <img src="../../assets/images/icon_email.svg" alt="icone de email">
-                            <label for="ipt_email">E-mail:</label>
-                        </div>
-                        <input type="text" id="ipt_email">
-
-                        <div>
-                            <img src="../../assets/images/icon_senha.svg" alt="icone de senha">
-                            <label for="ipt_confirmarSenha">Senha Novamente:</label>
-                        </div>
-                        <input type="text" id="ipt_confirmarSenha">
-
-                        <div>
-                            <label for="ipt_epsDia">Quantos Episódios Assiste por Dia:</label>
-                        </div>
-                        <input type="text" id="ipt_epsDia">
-
-                    </div>
-                    <div class="iconSelect">
-                        <label for="select_char">Escolha o icone do seu usuario:</label>
-                        <img src="../../assets/images/luffyFirstWanted.jpg" alt="imagem do usuario">
-                        <select name="charSelect" id="select_char">
-                            <option value="1">Luffy</option>
-                            <option value="2">Zoro</option>
-                            <option value="3">Nami</option>
-                            <option value="4">Usopp</option>
-                            <option value="5">Sanji</option>
-                            <option value="6">Chopper</option>
-                            <option value="7">Robin</option>
-                            <option value="8">Franky</option>
-                            <option value="9">Brook</option>
-                            <option value="10">Jinbe</option>
-                        </select>
                     </div>
                 </div>
-            </div>
+
             <div class="botao">
                 <button>Cadastrar</button>
                 <p>Já tem conta? <a href="">entre aqui</a></p>

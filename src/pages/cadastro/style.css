@@ -16,7 +16,7 @@ header{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 7vh;
+    height: 10vh;
     background-color: #3DADD9;
     box-shadow: 0px 0px 10px 5px #282828;
     z-index: 2;
@@ -60,7 +60,7 @@ header ul li a:hover::after{
 }
 
 main{
-    height: 93vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,7 +68,8 @@ main{
 }
 
 .container_cadastro{
-    width: 55vw;
+    width: 80vw;
+    height: 95%;
     border: 2px solid #000000;
     border-radius: 30px;
     background-color: #FFFFFF;
@@ -76,19 +77,19 @@ main{
 
 .container_cadastro .cadastro{
     padding: 50px 100px 0 100px;
+    height: 84%;
 }
 
 .container_cadastro .cadastro .infos{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
 }
 
 .container_cadastro .cadastro .infos .inputs div{
     display: flex;
     align-items: flex-end;
     height: 32px;
-    margin-top: 36.5px;
+    margin-top: 30.5px;
 }
 
 .container_cadastro .cadastro .infos .inputs div:nth-child(5) label{
@@ -126,7 +127,7 @@ main{
 }
 
 .container_cadastro .cadastro .infos .iconSelect img{
-    margin: 15px 0;
+    margin: 6px 0;
     box-shadow: 0 0 10px 0;
 }
 
@@ -144,7 +145,7 @@ main{
     justify-content: center;
     align-items: center;
     height: 10%;
-    margin: 30px 0;
+    margin: 10px 0;
 }
 
 .container_cadastro .botao button{
