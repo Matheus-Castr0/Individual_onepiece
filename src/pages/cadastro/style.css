@@ -89,16 +89,22 @@ main{
     display: flex;
     align-items: flex-end;
     height: 32px;
-    margin-top: 30.5px;
+    margin-top: 20.5px;
 }
 
-.container_cadastro .cadastro .infos .inputs div:nth-child(5) label{
+.container_cadastro .cadastro .infos .inputs div:nth-child(7) label{
     margin-left: 0;
 }
 
 .container_cadastro .cadastro .infos .inputs{
     width: 300px;
     margin-right: 15px;
+}
+
+.container_cadastro .cadastro .infos .inputs p{
+    font-size: 17px;
+    margin-left: 10px;
+    color: #FFFFFF;
 }
 
 .container_cadastro .cadastro .infos .inputs div label{
@@ -127,7 +133,7 @@ main{
 }
 
 .container_cadastro .cadastro .infos .iconSelect img{
-    margin: 6px 0;
+    margin: 11px 0;
     box-shadow: 0 0 10px 0;
 }
 

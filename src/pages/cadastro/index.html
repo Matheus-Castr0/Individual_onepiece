@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One Piece - Cadastro</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./index.js"></script>
 </head>
 <body>
 
@@ -31,17 +32,20 @@
                                 <label for="ipt_nome">Primeiro Nome:</label>
                             </div>
                             <input type="text" id="ipt_nome">
+                            <p id="erro_nome">O nome precisa ter mais de 2 caracteres</p>
 
                             <div>
                                 <img src="../../assets/images/icons/icon_senha.svg" alt="icone de senha">
-                                <label for="ipt_senha">Senha:</label>
+                                <label for="ipt_senha">Senha: (entre 8 e 12 digitos)</label>
                             </div>
-                            <input type="text" id="ipt_senha">
+                            <input type="password" id="ipt_senha">
+                            <p id="erro_senha">A senha precisa ter entre 8 e 12 caracteres</p>
 
                             <div>
                                 <label for="ipt_epAtual">Último Episódio Assistido:</label>
                             </div>
-                            <input type="text" id="ipt_epAtual">
+                            <input min="1" max="1105" type="number" id="ipt_epAtual">
+                            <p id="erro_epAtual">O Episodio precisa estar entre 1 e 1105</p>
 
                         </div>
                         <div class="inputs">
@@ -51,17 +55,20 @@
                                 <label for="ipt_email">E-mail:</label>
                             </div>
                             <input type="text" id="ipt_email">
+                            <p id="erro_email">O E-mail precisa ter @ e .</p>
 
                             <div>
                                 <img src="../../assets/images/icons/icon_senha.svg" alt="icone de senha">
                                 <label for="ipt_confirmarSenha">Senha Novamente:</label>
                             </div>
-                            <input type="text" id="ipt_confirmarSenha">
+                            <input type="password" id="ipt_confirmarSenha">
+                            <p id="erro_confirmarSenha">As Senhas não são compativeis</p>
 
                             <div>
                                 <label for="ipt_epsDia">Quantos Episódios Assiste por Dia:</label>
                             </div>
-                            <input type="text" id="ipt_epsDia">
+                            <input min="1" max="12" type="number" id="ipt_epsDia">
+                            <p id="erro_epsDia">Precisa assistir de 1 a 12 episodios por dia</p>
 
                         </div>
                         <div class="iconSelect">
@@ -84,7 +91,7 @@
                 </div>
 
             <div class="botao">
-                <button>Cadastrar</button>
+                <button onclick="validar()">Cadastrar</button>
                 <p>Já tem conta? <a href="../login/index.html">entre aqui</a></p>
             </div>
 

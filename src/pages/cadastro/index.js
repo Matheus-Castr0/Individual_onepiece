@@ -1,0 +1,60 @@
+function validar() {
+    var nome = ipt_nome.value
+    var email = ipt_email.value
+    var senha = ipt_senha.value
+    var senhaConfirmar = ipt_confirmarSenha.value
+    var epAtual = ipt_epAtual.value
+    var epsDia = ipt_epsDia.value
+
+    var valido = 0
+
+    if(nome.length <= 2) {
+        erro_nome.style.color = '#FF0000'
+    } else {
+        erro_nome.style.color = '#FFFFFF'
+        valido++
+    }
+
+    if(email.indexOf('@') == -1 || email.indexOf('.') == -1) {
+        erro_email.style.color = '#FF0000'
+    } else {
+        erro_email.style.color = '#FFFFFF'
+        valido++
+    }
+
+    if(senha.length < 8 || senha.length > 12) {
+        erro_senha.style.color = '#FF0000'
+    } else {
+        erro_senha.style.color = '#FFFFFF'
+        valido++
+    }
+
+    if(senha != senhaConfirmar) {
+        erro_confirmarSenha.style.color = '#FF0000'
+    } else {
+        erro_confirmarSenha.style.color = '#FFFFFF'
+        valido++
+    }
+
+    if(epAtual < 1 || epAtual > 1105) {
+        erro_epAtual.style.color = '#FF0000'
+    } else {
+        erro_epAtual.style.color = '#FFFFFF'
+        valido++
+    }
+
+    if(epsDia < 1 || epsDia > 12) {
+        erro_epsDia.style.color = '#FF0000'
+    } else {
+        erro_epsDia.style.color = '#FFFFFF'
+        valido++
+    }
+
+    if(valido == 6) {
+        cadastrar()
+    }
+}
+
+function cadastrar() {
+    console.log('cadastro realizado!')
+}
