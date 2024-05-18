@@ -1,10 +1,14 @@
 function validar() {
-    var nome = ipt_nome.value
+    var nome = ipt_nome.value;
     var email = ipt_email.value
+    
     var senha = ipt_senha.value
     var senhaConfirmar = ipt_confirmarSenha.value
+    
     var epAtual = ipt_epAtual.value
     var epsDia = ipt_epsDia.value
+
+    var usuario_icone = select_char.value
 
     var valido = 0
 
@@ -47,6 +51,13 @@ function validar() {
         erro_epsDia.style.color = '#FF0000'
     } else {
         erro_epsDia.style.color = '#FFFFFF'
+        valido++
+    }
+
+    if(usuario_icone == '#') {
+        erro_select.style.color = '#FF0000'
+    } else {
+        erro_select.style.color = '#FFFFFF'
         valido++
     }
 

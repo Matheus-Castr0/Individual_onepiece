@@ -101,9 +101,10 @@ main{
     margin-right: 15px;
 }
 
-.container_cadastro .cadastro .infos .inputs p{
+.container_cadastro .cadastro .infos .inputs p,
+.container_cadastro .cadastro .infos .iconSelect p{
     font-size: 17px;
-    margin-left: 10px;
+    margin-top: 5px;
     color: #FFFFFF;
 }
 
@@ -139,11 +140,11 @@ main{
 
 .container_cadastro .cadastro .infos .iconSelect select{
     font-size: 18px;
-    margin-top: 5px;
+    margin-top: 15px;
     padding: 5px 15px;
     border: 1px solid #A9A9A9;
     border-radius: 10px;
-    width: 90%;
+    width: 95%;
 }
 
 .container_cadastro .botao{
