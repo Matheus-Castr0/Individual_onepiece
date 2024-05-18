@@ -69,7 +69,7 @@ header{
 
 main .eastblue{
     height: 100vh;
-    background-image: url('../../assets/images/marry.png');
+    background-image: url('../../assets/images/backgrounds_sagas/marry.png');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -81,7 +81,7 @@ main .eastblue{
 
 main .alabasta{
     height: 100vh;
-    background-image: url('../../assets/images/alabastaBack.jpg');
+    background-image: url('../../assets/images/backgrounds_sagas/alabastaBack.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -93,7 +93,7 @@ main .alabasta{
 
 main .skypiea{
     height: 100vh;
-    background-image: url('../../assets/images/skypieaBack.jpg');
+    background-image: url('../../assets/images/backgrounds_sagas/skypieaBack.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -105,7 +105,7 @@ main .skypiea{
 
 main .water7{
     height: 100vh;
-    background-image: url('../../assets/images/Water7Back.jpg');
+    background-image: url('../../assets/images/backgrounds_sagas/Water7Back.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -117,7 +117,7 @@ main .water7{
 
 main .thrillerBark{
     height: 100vh;
-    background-image: url('../../assets/images/Thriller_Bark.webp');
+    background-image: url('../../assets/images/backgrounds_sagas/Thriller_Bark.webp');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -129,7 +129,7 @@ main .thrillerBark{
 
 main .marineford{
     height: 100vh;
-    background-image: url('../../assets/images/marinefordBack.jpg');
+    background-image: url('../../assets/images/backgrounds_sagas/marinefordBack.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -141,7 +141,7 @@ main .marineford{
 
 main .ilhaPeixe{
     height: 100vh;
-    background-image: url('../../assets/images/Fish-Man.webp');
+    background-image: url('../../assets/images/backgrounds_sagas/Fish-Man.webp');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -153,7 +153,7 @@ main .ilhaPeixe{
 
 main .alianca{
     height: 100vh;
-    background-image: url('../../assets/images/dressrosaBack.jpg');
+    background-image: url('../../assets/images/backgrounds_sagas/dressrosaBack.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -165,7 +165,7 @@ main .alianca{
 
 main .yonkou{
     height: 100vh;
-    background-image: url('../../assets/images/yonkouBack.png');
+    background-image: url('../../assets/images/backgrounds_sagas/yonkouBack.png');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -177,7 +177,7 @@ main .yonkou{
 
 main .final{
     height: 100vh;
-    background-image: url('../../assets/images/eggheadBack.avif');
+    background-image: url('../../assets/images/backgrounds_sagas/eggheadBack.avif');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
