@@ -61,12 +61,12 @@ function validar() {
         valido++
     }
 
-    if(valido == 6) {
-        cadastrar()
+    if(valido == 7) {
+        cadastrar(nome,email,senha,epAtual,epsDia,usuario_icone)
     }
 }
 
-function cadastrar() {
+function cadastrar(nome, email, senha,epAtual,epsDia,usuario_icone) {
     console.log('cadastro realizado!')
 }
 
