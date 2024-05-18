@@ -1,0 +1,129 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    font-size: 20px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: #3DADD9;
+    box-shadow: 0px 0px 10px 5px #282828;
+    z-index: 2;
+    position: relative;
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+}
+
+header ul li{
+    display: flex;
+    list-style: none;
+    margin: 0 20px;
+    text-decoration: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+header div:last-child .navbar ul li:last-child a{
+    background-color: #011126;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+header ul li a::after{
+    display: block;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #FFFFFF;
+}
+
+header ul li a:hover::after{
+    width: 100%;
+    transition: ease-in-out 0.5s;
+}
+
+main{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('../../assets/images/background_home.png') 0/cover no-repeat;
+}
+
+main .sagas{
+    width: 50vw;
+    margin-top: 20px;
+}
+
+main .sagas h3{
+    text-align: center;
+}
+
+main .sagas div{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+main .sagas div button{
+    width: 8.5vw;
+    height: 3.5vw;
+    border: none;
+    border-radius: 10px;
+    background-color: #011126;
+    color: #FFFFFF;
+}
+
+main .sagas div button:focus{
+    box-shadow: 0px 0px 10px 0;
+}
+
+main .sagas div button:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0;
+}
+
+main .sagas div button span{
+    font-size: 15px;
+}
+
+main .episodios{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 30px;
+    padding: 20px;
+    width: 50vw;
+    height: 55%;
+    margin-top: 20px;
+    border: 2px solid #000000;
+}
+
+footer{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    background-color: #A78455;
+    background-image: url('../../assets/images/rodape_line.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: -10px 0 20px 0 #000000;
+}
