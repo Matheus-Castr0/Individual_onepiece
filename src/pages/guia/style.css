@@ -23,30 +23,37 @@ header{
     position: relative;
 }
 
-header ul{
+#header_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.navbar ul{
     display: flex;
     align-items: center;
 }
 
-header ul li{
+.navbar ul li{
     display: flex;
     list-style: none;
     margin: 0 20px;
     text-decoration: none;
 }
 
-header ul li a{
+.navbar ul li a{
     text-decoration: none;
     color: #FFFFFF;
 }
 
-header div:last-child .navbar ul li:last-child a{
+#header_container div:last-child .navbar ul li:last-child a{
     background-color: #011126;
     padding: 10px;
     border-radius: 15px;
 }
 
-header ul li a::after{
+.navbar ul li a::after{
     display: block;
     content: "";
     width: 0;
@@ -54,7 +61,7 @@ header ul li a::after{
     background-color: #FFFFFF;
 }
 
-header ul li a:hover::after{
+.navbar ul li a:hover::after{
     width: 100%;
     transition: ease-in-out 0.5s;
 }
