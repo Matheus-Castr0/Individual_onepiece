@@ -220,7 +220,7 @@ main .summary{
     align-items: center;
     justify-content: space-around;
     width: 90%;
-    height: 524px;
+    height: 75vh;
     padding: 0 40px;
     background: rgb(212,194,170);
     background: radial-gradient(circle, rgba(212,194,170,1) 0%, rgba(165,139,118,1) 100%);
@@ -229,7 +229,7 @@ main .summary{
 }
 
 .poster img{
-    width: 100%;
+    width: 20vw;
     border: 3px solid #38261A;
 }
 
