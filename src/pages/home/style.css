@@ -347,7 +347,7 @@ main .summary{
 }
 
 footer{
-    height: 130px;
+    height: 10vh;
     display: flex;
     justify-content: center;
     background-color: #A78455;
