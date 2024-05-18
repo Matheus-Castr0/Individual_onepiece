@@ -54,7 +54,7 @@ function validar() {
         valido++
     }
 
-    if(usuario_icone == '#') {
+    if(usuario_icone == 'blank') {
         erro_select.style.color = '#FF0000'
     } else {
         erro_select.style.color = '#FFFFFF'
@@ -68,4 +68,9 @@ function validar() {
 
 function cadastrar() {
     console.log('cadastro realizado!')
+}
+
+function mudarPoster() {
+    var usuario_icone = select_char.value
+    poster.src = `../../assets/images/cartazes/${usuario_icone}Wanted.jpg`
 }
