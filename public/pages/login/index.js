@@ -23,6 +23,8 @@ function logar() {
 
             window.open('/pages/dashboard/index.html', '_self')
 
+        } else {
+            alert('Email e/ou senha inválido(s)')
         }
         
     })
