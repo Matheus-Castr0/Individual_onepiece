@@ -80,9 +80,10 @@ function cadastrar(nome, email, senha, epAtual, epsDia, iconeUsuario) {
             epsDiaServer: epsDia,
             iconeUsuarioServer: iconeUsuario
         })
-    }).then((res) => {
-        res.json()
     })
+
+    window.open('/pages/login/index.html', '_self')
+
 }
 
 function mudarPoster() {
