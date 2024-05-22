@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One Piece - Login</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./index.js"></script>
 </head>
 <body>
 
@@ -29,9 +30,9 @@
 
                         <div>
                             <img src="../../assets/images/icons/icon_email.svg" alt="icone de usuario">
-                            <label for="ipt_nome">E-mail:</label>
+                            <label for="ipt_email">E-mail:</label>
                         </div>
-                        <input type="text" id="ipt_nome">
+                        <input type="text" id="ipt_email">
 
                         <div>
                             <img src="../../assets/images/icons/icon_senha.svg" alt="icone de senha">
@@ -43,7 +44,7 @@
                 </div>
             </div>
             <div class="botao">
-                <button>Logar</button>
+                <button onclick="logar()">Logar</button>
                 <p>Ainda não tem conta? <a href="../cadastro/index.html">crie uma aqui</a></p>
             </div>
 
