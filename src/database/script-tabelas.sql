@@ -11,7 +11,7 @@ CREATE TABLE personagem (
 CREATE TABLE usuario (
     idUsuario INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(45),
-    email VARCHAR(45),
+    email VARCHAR(45) UNIQUE,
     senha VARCHAR(12),
     epAtual INT,
     qtdEpsDia INT,

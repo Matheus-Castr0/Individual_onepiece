@@ -69,12 +69,11 @@ function cadastrar(req, res) {
                 }
             ).catch(
                 function (erro) {
-                    console.log(erro);
-                    console.log(
-                        "\nHouve um erro ao realizar o cadastro! Erro: ",
-                        erro.sqlMessage
-                    );
-                    res.status(500).json(erro.sqlMessage);
+
+                    if(erro.code === 'ER_DUP_ENTRY') {
+                        res.status(500).json('Esse E-mail ja possui cadastro!');
+                    }
+
                 }
             );
     }
