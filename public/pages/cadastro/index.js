@@ -72,5 +72,5 @@ function cadastrar(nome, email, senha,epAtual,epsDia,usuario_icone) {
 
 function mudarPoster() {
     var usuario_icone = select_char.value
-    poster.src = `../../assets/images/cartazes/${usuario_icone}Wanted.jpg`
+    poster.src = `../../assets/images/cartazes/Wanted${usuario_icone}.jpg`
 }
