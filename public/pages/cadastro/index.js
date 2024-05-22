@@ -66,8 +66,23 @@ function validar() {
     }
 }
 
-function cadastrar(nome, email, senha,epAtual,epsDia,usuario_icone) {
-    console.log('cadastro realizado!')
+async function cadastrar(nome, email, senha, epAtual, epsDia, iconeUsuario) {
+    var res = await fetch('http://localhost:3333/usuarios/cadastrar', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            nomeServer: nome,
+            emailServer: email,
+            senhaServer: senha,
+            epAtualServer: epAtual,
+            epsDiaServer: epsDia,
+            iconeUsuarioServer: iconeUsuario
+        })
+    })
+
+    console.log(res)
 }
 
 function mudarPoster() {
