@@ -1,10 +1,13 @@
 var database = require("../database/config");
 
 function pegarDados() {
-    for (var i = 1; i <= 10; i++) {
-        var instrucaoSql = `SELECT COUNT(fkPersonagem) FROM usuario WHERE fkPersonagem = ${i};`
-    }
+
+    var instrucaoSql = `
+        SELECT personagem.nome, COUNT(usuario.fkPersonagem) as escolhido FROM personagem LEFT JOIN usuario
+        ON idPersonagem = fkPersonagem GROUP BY nome;
+    `
     return database.executar(instrucaoSql)
+
 }
 
 module.exports = {

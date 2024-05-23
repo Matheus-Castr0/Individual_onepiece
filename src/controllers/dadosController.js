@@ -2,7 +2,7 @@ var dadosModel = require("../models/dadosModel")
 
 function qtdEscolhido(req, res) {
     dadosModel.pegarDados().then(resultado => {
-        console.log(resultado)
+        res.json(resultado)
     }).catch(
         function (erro) {
 
