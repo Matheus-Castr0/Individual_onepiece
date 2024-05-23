@@ -262,6 +262,51 @@ main .summary{
     font-weight: 400;
 }
 
+.author{
+    display: flex;
+    justify-content: center;
+    background-color: #011126;
+}
+
+.author > div{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.authorImage{
+    width: 30%;
+}
+
+.authorImage img{
+    width: 100%;
+    height: 100%;
+}
+
+.authorDescription{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #000000;
+    border-radius: 0 30px 30px 0;
+}
+
+.authorDescription h2{
+    margin-top: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.authorDescription p{
+    color: #FFFFFF;
+    margin: 30px;
+}
+
+.authorDescription img{
+    width: 100%;
+}
+
 .extras{
     display: flex;
     justify-content: center;
