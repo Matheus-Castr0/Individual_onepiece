@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One piece - dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="./index.js"></script>
 </head>
 <body>
 
@@ -42,6 +44,18 @@
                     <img src="../../assets/images/icon_relogio.png" alt="icone de relogio">
                     <p>5 Horas</p>
                 </div>
+            </div>
+
+        </div>
+
+        <div id="graficos">
+            
+            <div class="graficoBarra">
+                <canvas id="graficoBar"></canvas>
+            </div>
+    
+            <div class="graficoDonut">
+                <canvas id="graficoDonut"></canvas>
             </div>
 
         </div>
