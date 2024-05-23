@@ -1,4 +1,13 @@
-window.onload = plotarKPIs()
+window.onload = plotarKPIs();
+window.onload = buscarQtdEscolhidos();
+
+function buscarQtdEscolhidos() {
+    fetch("http://localhost:3333/banco/qtdEscolhidos").then(res => {
+        res.json().then(response => {
+            console.log(response)
+        })
+    })
+}
 
 function plotarKPIs() {
     var epAtual = sessionStorage.getItem('EP_ATUAL')
