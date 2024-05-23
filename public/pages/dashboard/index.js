@@ -1,3 +1,16 @@
+window.onload = plotarKPIs()
+
+function plotarKPIs() {
+    var epAtual = sessionStorage.getItem('EP_ATUAL')
+    var epsRestantes = 1108-epAtual
+    document.getElementById('epsRestantes').innerHTML = `${epsRestantes}/1108`
+
+    var tempoGastoMin = epAtual*20
+    var tempoGastoHora = tempoGastoMin/60
+    document.getElementById('tempoGasto').innerHTML = `${tempoGastoMin} Minutos <br> OU <br>${tempoGastoHora} Horas`
+
+}
+
 var graficoBarra = document.getElementById('graficoBar');
 var graficoDonut = document.getElementById('graficoDonut');
 

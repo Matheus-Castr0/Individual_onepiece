@@ -108,7 +108,8 @@ main .kpis .tempo_restante div{
 main .kpis .tempo_gasto div p,
 main .kpis .eps_restantes div p,
 main .kpis .tempo_restante div p{
-    font-size: 28px;
+    text-align: center;
+    font-size: 24px;
     margin-left: 10px;
 }
 
