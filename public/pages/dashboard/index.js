@@ -7,7 +7,11 @@ function plotarKPIs() {
 
     var tempoGastoMin = epAtual*20
     var tempoGastoHora = tempoGastoMin/60
-    document.getElementById('tempoGasto').innerHTML = `${tempoGastoMin} Minutos <br> OU <br>${tempoGastoHora} Horas`
+    document.getElementById('tempoGasto').innerHTML = `${tempoGastoMin.toFixed(0)} Minutos <br> OU <br>${tempoGastoHora.toFixed(0)} Horas`
+
+    var tempoRestanteMin = epsRestantes*20;
+    var tempoRestanteHora = tempoRestanteMin/60;
+    document.getElementById('tempoRestante').innerHTML = `${tempoRestanteMin.toFixed(0)} Minutos <br> OU <br>${tempoRestanteHora.toFixed(0)} Horas`
 
 }
 
