@@ -1,6 +1,7 @@
 window.onload = plotarKPIs();
 window.onload = buscarQtdEscolhidos();
-window.onload = buscarQtdEpisodios()
+window.onload = buscarQtdEpisodios();
+window.onload = definirNome();
 
 function buscarQtdEscolhidos() {
     fetch("http://localhost:3333/banco/qtdEscolhidos").then(res => {
@@ -100,4 +101,9 @@ function plotarGraficoDonut(dadosEpisodios) {
             }]
         }
     })
+}
+
+function definirNome() {
+    var nome = sessionStorage.getItem('NOME_USUARIO')
+    nomeUsuario.innerHTML = `Olá, ${nome}`
 }
