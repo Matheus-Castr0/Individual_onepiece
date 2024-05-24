@@ -121,15 +121,10 @@ INSERT INTO arco(nome, tipo, epInicial, epFinal, fkSaga) VALUES
     ('Passado de Uta', 'Filler', 1029, 1030, 9),
     ('País de Wano', 'Canônico', 1031, 1088, 9),
 
-    ('Egghead', 'Canônico', 1089, null, 10)
+    ('Egghead', 'Canônico', 1089, null, 10);
+    
+SELECT personagem.nome, COUNT(usuario.fkPersonagem) FROM personagem LEFT JOIN usuario
+ON idPersonagem = fkPersonagem GROUP BY nome;
 
-
-
-
-
-
-
-
-
-
+select epAtual from usuario;
 

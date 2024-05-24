@@ -8,4 +8,8 @@ router.get("/qtdEscolhidos", function (req, res) {
     dadosController.qtdEscolhido(req, res)
 })
 
+router.get("/qtdEpisodios", function (req, res) {
+    dadosController.qtdEpisodios(req, res)
+})
+
 module.exports = router;
