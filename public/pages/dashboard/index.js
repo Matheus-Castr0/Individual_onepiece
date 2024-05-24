@@ -1,10 +1,19 @@
 window.onload = plotarKPIs();
 window.onload = buscarQtdEscolhidos();
+window.onload = buscarQtdEpisodios()
 
 function buscarQtdEscolhidos() {
     fetch("http://localhost:3333/banco/qtdEscolhidos").then(res => {
         res.json().then(response => {
             plotarGraficoBarra(response)
+        })
+    })
+}
+
+function buscarQtdEpisodios() {
+    fetch("http://localhost:3333/banco/qtdEpisodios").then(res => {
+        res.json().then(response => {
+            plotarGraficoDonut(response)
         })
     })
 }
@@ -54,4 +63,41 @@ function plotarGraficoBarra(dadosPersonagens) {
         }
     });
 
+}
+
+function plotarGraficoDonut(dadosEpisodios) {
+    var episodios = [0, 0, 0, 0]
+
+    for (var i = 0; i < dadosEpisodios.length ; i++) {
+        
+        if(dadosEpisodios[i].epAtual <= 250) {
+            episodios[0]++
+        } else if(dadosEpisodios[i].epAtual > 250 && dadosEpisodios[i].epAtual <= 500) {
+            episodios[1]++
+        } else if(dadosEpisodios[i].epAtual > 500 && dadosEpisodios[i].epAtual <= 750) {
+            episodios[2]++
+        } else {
+            episodios[3]++
+        }
+
+    }
+
+    var graficoDonut = document.getElementById('graficoDonut');
+
+    new Chart(graficoDonut, {
+        type: 'doughnut',
+        data: {
+            labels: ['Abaixo do Episodio 250', 'Entre o Episodio 250 e 500', 'Entre o Episodio 500 e 750', 'Acima do Episodio 750'],
+            datasets: [{
+                data: episodios,
+                backgroundColor: [
+                    'rgb(255, 99, 132)',
+                    'rgb(54, 162, 235)',
+                    'rgb(255, 205, 86)',
+                    'rgb(15, 245, 36)'
+                ],
+                hoverOffset: 4
+            }]
+        }
+    })
 }

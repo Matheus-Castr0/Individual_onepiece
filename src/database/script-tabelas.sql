@@ -122,6 +122,13 @@ INSERT INTO arco(nome, tipo, epInicial, epFinal, fkSaga) VALUES
     ('País de Wano', 'Canônico', 1031, 1088, 9),
 
     ('Egghead', 'Canônico', 1089, null, 10);
+
+INSERT INTO usuario(nome, email, senha, epAtual, qtdEpsDia, fkPersonagem) VALUES
+	('matheus', 'matheus@gmail.com', '12345678', 563, 5, 5),
+    ('layssa', 'layssa@gmail.com', '12345678', 364, 2, 3),
+    ('marcela', 'marcela@gmail.com', '12345678', 946, 4, 7),
+    ('stephanie', 'stephanie@gmail.com', '12345678', 754, 1, 3),
+    ('reynald', 'reynald@gmail.com', '12345678', 698, 2, 2);
     
 SELECT personagem.nome, COUNT(usuario.fkPersonagem) FROM personagem LEFT JOIN usuario
 ON idPersonagem = fkPersonagem GROUP BY nome;
