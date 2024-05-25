@@ -119,9 +119,17 @@ main .episodios{
     border-radius: 30px;
     padding: 20px;
     width: 50vw;
-    height: 55%;
-    margin-top: 20px;
+    height: 100%;
+    margin: 20px;
     border: 2px solid #000000;
+}
+
+main .episodios span.canonico{
+    color: #007700;
+}
+
+main .episodios span.filler{
+    color: #FF0000;
 }
 
 footer{
