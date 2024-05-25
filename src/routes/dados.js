@@ -12,4 +12,8 @@ router.get("/qtdEpisodios", function (req, res) {
     dadosController.qtdEpisodios(req, res)
 })
 
+router.get("/Sagas&Episodios/:idSaga", function (req, res) {
+    dadosController.SagaEpisodio(req, res)
+})
+
 module.exports = router;

@@ -24,7 +24,17 @@ function qtdEpisodios(req, res) {
     );
 }
 
+function SagaEpisodio(req, res) {
+    var saga = req.params.idSaga
+    dadosModel.pegarDadosSagasEpisodios(saga).then(resultado => {
+        res.json(resultado)
+    }).catch(function (erro) {
+        res.status(500).json(erro)
+    })
+}
+
 module.exports = {
     qtdEscolhido,
-    qtdEpisodios
+    qtdEpisodios,
+    SagaEpisodio
 }

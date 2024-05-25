@@ -17,7 +17,15 @@ function pegarDadosEpisodios() {
 
 }
 
+function pegarDadosSagasEpisodios(saga) {
+
+    var instrucaoSql = `select nome, tipo, epInicial, epFinal from arco where fkSaga = ${saga};`
+    return database.executar(instrucaoSql)
+
+}
+
 module.exports = {
     pegarDadosEscolhidos,
-    pegarDadosEpisodios
+    pegarDadosEpisodios,
+    pegarDadosSagasEpisodios
 }
