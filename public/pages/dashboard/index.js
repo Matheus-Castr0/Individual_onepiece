@@ -121,3 +121,28 @@ function cancelar() {
     ipt_episodio.disabled = true
     btn_ep.style.display = 'flex'
 }
+
+function confirmar() {
+    var idUsuario = sessionStorage.getItem("ID_USUARIO")
+    var epAtual = Number(ipt_episodio.value)
+
+    sessionStorage.EP_ATUAL = epAtual
+
+    fetch("http://localhost:3333/usuarios/atualizarEp", {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            idUsuarioServer: idUsuario,
+            epAtualServer: epAtual
+        })
+    }).then(res => {
+        if(res.ok) {
+            plotarKPIs();
+            window.location.reload()
+        } else {
+            alert('Erro ao atualizar Episodio')
+        }
+    })
+}
