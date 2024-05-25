@@ -153,65 +153,56 @@ main .summary{
 
 .charsIcons img{
     width: 80px;
+    transition: ease-in-out 0.5s;
 }
 
 .charsIcons #jollyroger_luffy:hover{
     cursor: pointer;
-    transition: ease-in-out 0.5s;
     filter: drop-shadow(0 0 5px #FF0000);
 }
 
 .charsIcons #jollyroger_zoro:hover{
     cursor: pointer;
-    transition: ease-in-out 0.5s;
     filter: drop-shadow(0 0 5px #00FF00);
 }
 
 .charsIcons #jollyroger_nami:hover{
     cursor: pointer;
-    transition: ease-in-out 0.5s;
     filter: drop-shadow(0 0 5px #FDAE04);
 }
 
 .charsIcons #jollyroger_usopp:hover{
     cursor: pointer;
-    transition: ease-in-out 0.5s;
     filter: drop-shadow(0 0 5px #7E6B09);
 }
 
 .charsIcons #jollyroger_sanji:hover{
     cursor: pointer;
-    transition: ease-in-out 0.5s;
     filter: drop-shadow(0 0 5px #FFFF00);
 }
 
 .charsIcons #jollyroger_chopper:hover{
     cursor: pointer;
-    transition: ease-in-out 0.5s;
     filter: drop-shadow(0 0 5px #E998DE);
 }
 
 .charsIcons #jollyroger_robin:hover{
     cursor: pointer;
-    transition: ease-in-out 0.5s;
     filter: drop-shadow(0 0 5px #A72AFA);
 }
 
 .charsIcons #jollyroger_franky:hover{
     cursor: pointer;
-    transition: ease-in-out 0.5s;
     filter: drop-shadow(0 0 5px #13E3F7);
 }
 
 .charsIcons #jollyroger_brook:hover{
     cursor: pointer;
-    transition: ease-in-out 0.5s;
     filter: drop-shadow(0 0 5px #6d6d6d);
 }
 
 .charsIcons #jollyroger_jinbe:hover{
     cursor: pointer;
-    transition: ease-in-out 0.5s;
     filter: drop-shadow(0 0 5px #0000FF);
 }
 
