@@ -267,7 +267,7 @@ main .alabasta .about .description h3{
 }
 
 footer{
-    height: 10vh;
+    height: 12vh;
     display: flex;
     justify-content: center;
     background-color: #A78455;
