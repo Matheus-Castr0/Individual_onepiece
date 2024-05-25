@@ -32,6 +32,8 @@ function plotarKPIs() {
     var tempoRestanteHora = tempoRestanteMin/60;
     document.getElementById('tempoRestante').innerHTML = `${tempoRestanteMin.toFixed(0)} Minutos <br> OU <br>${tempoRestanteHora.toFixed(0)} Horas`
 
+    document.getElementById('ipt_episodio').value = epAtual
+
 }
 
 function plotarGraficoBarra(dadosPersonagens) {
@@ -106,4 +108,16 @@ function plotarGraficoDonut(dadosEpisodios) {
 function definirNome() {
     var nome = sessionStorage.getItem('NOME_USUARIO')
     nomeUsuario.innerHTML = `Olá, ${nome}`
+}
+
+function habilitarInput() {
+    ipt_episodio.disabled = false
+    btn_ep.style.display = 'none'
+    div_confirmar.style.display = 'flex'
+}
+
+function cancelar() {
+    div_confirmar.style.display = 'none'
+    ipt_episodio.disabled = true
+    btn_ep.style.display = 'flex'
 }

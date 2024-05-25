@@ -73,6 +73,26 @@ aside .atualizarEp{
     margin-bottom: 150px;
 }
 
+aside .atualizarEp .confirmar{
+    display: none;
+    width: 80%;
+    gap: 10px;
+}
+
+aside .atualizarEp .confirmar button{
+    width: 50%;
+    height: 32px;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #011126;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 aside .atualizarEp input{
     width: 85%;
     font-size: 18px;
@@ -82,7 +102,7 @@ aside .atualizarEp input{
     margin-top: 5px;
 }
 
-aside .atualizarEp button{
+aside .atualizarEp > button{
     width: 70%;
     margin-top: 5px;
     padding: 5px;
