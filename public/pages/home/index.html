@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>One Piece - Home</title>
+    <script defer src="./index.js"></script>
 </head>
 <body>
 
@@ -54,33 +55,32 @@
                 <div class="charsIcons">
 
                     <div>
-                        <img id="jollyroger_luffy" src="../../assets/images/jollyroger_luffy.svg" alt="icone do luffy">
-                        <img id="jollyroger_zoro" src="../../assets/images/jollyRogersZoro.png" alt="icone do zoro">
-                        <img id="jollyroger_nami" src="../../assets/images/jollyRogersNami.png" alt="icone da nami">
-                        <img id="jollyroger_usopp" src="../../assets/images/jollyRogersUsopp.png" alt="icone do usopp">
-                        <img id="jollyroger_sanji" src="../../assets/images/jollyRogersSanji.png" alt="icone do sanji">
+                        <img onclick="trocarDesc(1)" class="jollyroger" id="jollyroger_luffy" src="../../assets/images/jollyroger_luffy.svg" alt="icone do luffy">
+                        <img onclick="trocarDesc(2)" class="jollyroger" id="jollyroger_zoro" src="../../assets/images/jollyRogersZoro.png" alt="icone do zoro">
+                        <img onclick="trocarDesc(3)" class="jollyroger" id="jollyroger_nami" src="../../assets/images/jollyRogersNami.png" alt="icone da nami">
+                        <img onclick="trocarDesc(4)" class="jollyroger" id="jollyroger_usopp" src="../../assets/images/jollyRogersUsopp.png" alt="icone do usopp">
+                        <img onclick="trocarDesc(5)" class="jollyroger" id="jollyroger_sanji" src="../../assets/images/jollyRogersSanji.png" alt="icone do sanji">
                     </div>
 
                     <div>
-                        <img id="jollyroger_chopper" src="../../assets/images/jollyRogersChopper.png" alt="icone do chopper">
-                        <img id="jollyroger_robin" src="../../assets/images/jollyRogersRobin.png" alt="icone da robin">
-                        <img id="jollyroger_franky" src="../../assets/images/jollyRogersFranky.png" alt="icone do franky">
-                        <img id="jollyroger_brook" src="../../assets/images/jollyRogersBrook.png" alt="icone do brook">
-                        <img id="jollyroger_jinbe" src="../../assets/images/jollyroger_jinbe.svg" alt="icone do jinbe">
+                        <img onclick="trocarDesc(6)" class="jollyroger" id="jollyroger_chopper" src="../../assets/images/jollyRogersChopper.png" alt="icone do chopper">
+                        <img onclick="trocarDesc(7)" class="jollyroger" id="jollyroger_robin" src="../../assets/images/jollyRogersRobin.png" alt="icone da robin">
+                        <img onclick="trocarDesc(8)" class="jollyroger" id="jollyroger_franky" src="../../assets/images/jollyRogersFranky.png" alt="icone do franky">
+                        <img onclick="trocarDesc(9)" class="jollyroger" id="jollyroger_brook" src="../../assets/images/jollyRogersBrook.png" alt="icone do brook">
+                        <img onclick="trocarDesc(10)" class="jollyroger" id="jollyroger_jinbe" src="../../assets/images/jollyroger_jinbe.svg" alt="icone do jinbe">
                     </div>
                 </div>
 
                 <div class="charsDescription">
                     
                     <div class="poster">
-                        <img src="../../assets/images/cartazes/luffyWanted.jpg" alt="cartaz de procurado">
+                        <img id="charImage" src="../../assets/images/cartazes/Wanted1.jpg" alt="cartaz de procurado">
                     </div>
-                    <div class="description">
+                    <div id="charDesc" class="description">
                         <h3>LUFFY, O Capitão</h3>
-                        <p>Jinbe é um poderoso e respeitado membro dos Piratas do Chapéu de Palha. Ele é um homem-peixe, especificamente um tubarão-baleia, o que lhe confere habilidades aquáticas excepcionais, como a capacidade de respirar e se mover livremente debaixo d'água. <br>
-                            Jinbe é conhecido por sua calma, sabedoria e senso de honra. Ele possui um forte código moral e está comprometido com a justiça e a proteção dos fracos. Como um ex-shichibukai e ex-capitão dos Piratas do Sol, Jinbe tem uma vasta experiência em combate e liderança, tornando-o uma figura respeitada no mundo pirata. <br>
-                            Além de suas habilidades de combate, Jinbe é um mestre em técnicas de luta baseadas em artes marciais aquáticas, usando seu poderoso estilo de luta de Karatê Peixe-Maneiro. Ele é capaz de combinar sua força física impressionante com sua agilidade e velocidade debaixo d'água para derrotar seus oponentes. <br>
-                            Jinbe é conhecido por sua lealdade inabalável aos seus amigos e aliados. Ele se torna um membro vital dos Piratas do Chapéu de Palha, contribuindo com sua experiência e habilidades para ajudar a tripulação de Luffy em suas aventuras. Sua presença traz uma sensação de segurança e estabilidade para o grupo, especialmente em situações perigosas.</p>
+                        <p>Monkey D Luffy é o capitão dos piratas do Chapéu de Palha, sempre buscando aventuras e desafiando adversidades. Sua coragem é lendária, pois ele não hesita em enfrentar inimigos poderosos para proteger seus amigos e alcançar seus sonhos. <br>
+                        Apesar de sua natureza impulsiva e às vezes ingênua, Luffy possui uma inteligência surpreendente quando se trata de estratégia e combate. Ele é extremamente leal aos seus companheiros e está disposto a fazer qualquer coisa por eles. Sua jornada para se tornar o Rei dos Piratas é impulsionada não apenas pelo desejo de fama e riqueza, mas também pela busca da liberdade e pela realização de seus próprios ideais de justiça e aventura. <br>
+                        Além disso, Luffy é um verdadeiro líder, capaz de inspirar e motivar aqueles ao seu redor com sua determinação inabalável e sua capacidade de superar qualquer obstáculo. Sua habilidade de esticar seu corpo, adquirida ao comer a Fruta do Diabo Gomu Gomu no Mi, adiciona um elemento único e divertido às suas batalhas, tornando ele um dos personagens mais memoráveis e carismáticos do mundo dos animes e mangás.</p>
                     </div>
 
                 </div>
