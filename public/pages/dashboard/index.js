@@ -146,7 +146,7 @@ function confirmar() {
         })
     }).then(res => {
         if(res.ok) {
-            plotarKPIs();
+            load()
             window.location.reload()
         } else {
             alert('Erro ao atualizar Episodio')
