@@ -12,4 +12,8 @@ router.post("/autenticar", function (req, res) {
     usuarioController.autenticar(req, res);
 });
 
+router.put("/atualizarEp", function (req, res) {
+    usuarioController.atualizarEp(req, res)
+})
+
 module.exports = router;

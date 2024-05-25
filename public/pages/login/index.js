@@ -16,6 +16,7 @@ function logar() {
         if(res.ok) {
 
             res.json().then(json => {
+                sessionStorage.ID_USUARIO = json.id
                 sessionStorage.NOME_USUARIO = json.nome
                 sessionStorage.PERSONAGEM = json.personagem
                 sessionStorage.EP_ATUAL = json.epAtual

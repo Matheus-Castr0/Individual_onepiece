@@ -17,7 +17,7 @@ function autenticar(req, res) {
                     if (resultadoAutenticar.length == 1) {
                         
                         res.json({
-                            id: resultadoAutenticar[0].id,
+                            id: resultadoAutenticar[0].idUsuario,
                             nome: resultadoAutenticar[0].nome,
                             epAtual: resultadoAutenticar[0].epAtual,
                             personagem: resultadoAutenticar[0].fkPersonagem
@@ -79,7 +79,24 @@ function cadastrar(req, res) {
     }
 }
 
+function atualizarEp(req, res) {
+    var idUsuario = req.body.idUsuarioServer
+    var epAtual = req.body.epAtualServer
+
+    usuarioModel.atualizarEp(idUsuario, epAtual)
+        .then(
+            function (resultado) {
+                res.json(resultado)
+            }
+        ).catch(
+            function (erro) {
+                res.status(500).json(erro.sqlMessage);
+            }
+        )
+}
+
 module.exports = {
     autenticar,
-    cadastrar
+    cadastrar,
+    atualizarEp
 }
