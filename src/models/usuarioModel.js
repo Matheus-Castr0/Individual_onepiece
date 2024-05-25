@@ -18,7 +18,6 @@ function cadastrar(nome, email, senha, epAtual, epsDia, iconeUsuario) {
 }
 
 function atualizarEp(idUsuario, epAtual) {
-    console.log(idUsuario, epAtual)
 
     var instrucaoSql = `
         UPDATE usuario SET epAtual = ${epAtual} WHERE idUsuario = ${idUsuario};

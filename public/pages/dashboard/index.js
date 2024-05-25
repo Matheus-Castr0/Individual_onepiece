@@ -120,6 +120,9 @@ function cancelar() {
     div_confirmar.style.display = 'none'
     ipt_episodio.disabled = true
     btn_ep.style.display = 'flex'
+
+    var epAtual = sessionStorage.getItem('EP_ATUAL')
+    document.getElementById('ipt_episodio').value = epAtual
 }
 
 function confirmar() {
@@ -145,4 +148,9 @@ function confirmar() {
             alert('Erro ao atualizar Episodio')
         }
     })
+}
+
+function sair() {
+    sessionStorage.clear()
+    window.open('/pages/login/index.html','_self')
 }
