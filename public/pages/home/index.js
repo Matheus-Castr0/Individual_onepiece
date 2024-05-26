@@ -105,3 +105,13 @@ function trocarDesc(personagem) {
 }
 
 document.getElementById('jollyroger_luffy').style.filter = 'drop-shadow(0 0 5px #FF0000)'
+
+function trocarPagina(pagina) {
+    if(pagina == 1) {
+        window.open("/pages/cadastro/index.html", "_self")
+    } else if (pagina == 2) {
+        window.open("/pages/guia/index.html", "_self")
+    } else {
+        window.open("/pages/sagas/index.html", "_self")
+    }
+}
