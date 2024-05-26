@@ -76,6 +76,21 @@ main .summary{
     background: url('../../assets/images/background_home.png') 0/cover no-repeat;
 }
 
+.refNami{
+    bottom: 360px;
+    left: 1135px;
+    height: 30%;
+    position: absolute;
+}
+
+.refLuffy{
+    position: absolute;
+    width: 15%;
+    bottom: 415px;
+    right: 935px;
+    transform: rotate(-45deg);
+}
+
 .carosel{
     display: flex;
     width: 60%;
@@ -100,7 +115,7 @@ main .summary{
 }
 
 .carosel_texts p{
-    font-size: 20px;
+    font-size: 18px;
     margin: 0 20px;
 }
 
@@ -118,8 +133,7 @@ main .summary{
 }
 
 
-.chars,
-.extras{
+.chars{
     height: 899px;
     background-color: #011126;
 }
@@ -305,6 +319,35 @@ main .summary{
 
 .authorDescription img{
     width: 80%;
+}
+
+.extras{
+    height: 650px;
+    background-color: #011126;
+}
+
+.refGoku{
+    background-color: #011126;
+}
+
+.refGoku img{
+    width: 100%;
+}
+
+.refBrookChopper{
+    display: flex;
+    justify-content: space-between;
+    background-color: #011126;
+}
+
+.refBrookChopper img:nth-child(1){
+    width: 5%;
+    transform: rotateY(180deg);
+    width: 5%;
+}
+
+.refBrookChopper img:nth-child(2){
+    width: 10%;
 }
 
 .extras{
