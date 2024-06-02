@@ -20,7 +20,7 @@ header{
     background-color: #3DADD9;
     box-shadow: 0px 0px 10px 5px #282828;
     z-index: 2;
-    position: relative;
+    position: fixed;
 }
 
 #header_container{
@@ -64,6 +64,11 @@ header{
 .navbar ul li a:hover::after{
     width: 100%;
     transition: ease-in-out 0.5s;
+}
+
+main{
+    position: static;
+    padding: 30px 0 0 0;
 }
 
 
@@ -275,4 +280,21 @@ footer{
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: -10px 0 20px 0 #000000;
+}
+
+.top{
+    position: fixed;
+    top: 80vh;
+    left: 96vw;
+    border: none;
+    background-color: #b1b1b1ad;
+    padding: 5px 20px 5px 5px;
+}
+
+.top:hover{
+    cursor: pointer;
+}
+
+.top img{
+    width: 30px;
 }
