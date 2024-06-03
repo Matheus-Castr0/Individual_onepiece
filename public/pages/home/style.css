@@ -1,17 +1,17 @@
 *,
 *::after,
-*::before{
+*::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     height: 100vh;
     font-size: 20px;
 }
 
-header{
+header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,37 +23,37 @@ header{
     position: fixed;
 }
 
-#header_container{
+#header_container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 60%;
 }
 
-.navbar ul{
+.navbar ul {
     display: flex;
     align-items: center;
 }
 
-.navbar ul li{
+.navbar ul li {
     display: flex;
     list-style: none;
     margin: 0 20px;
     text-decoration: none;
 }
 
-.navbar ul li a{
+.navbar ul li a {
     text-decoration: none;
     color: #FFFFFF;
 }
 
-#header_container div:last-child .navbar ul li:last-child a{
+#header_container div:last-child .navbar ul li:last-child a {
     background-color: #011126;
     padding: 10px;
     border-radius: 15px;
 }
 
-.navbar ul li a::after{
+.navbar ul li a::after {
     display: block;
     content: "";
     width: 0;
@@ -61,17 +61,17 @@ header{
     background-color: #FFFFFF;
 }
 
-.navbar ul li a:hover::after{
+.navbar ul li a:hover::after {
     width: 100%;
     transition: ease-in-out 0.5s;
 }
 
-main{
+main {
     position: static;
     padding: 30px 0 0 0;
 }
 
-main .summary{
+main .summary {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,24 +79,25 @@ main .summary{
     width: 100%;
     height: 80vh;
     background: url('../../assets/images/background_home.png') 0/cover no-repeat;
+    margin-top: 25px;
 }
 
-.refNami{
-    bottom: 360px;
-    left: 1135px;
-    height: 30%;
+.refNami {
+    bottom: 59.5vh;
+    left: 86.3vw;
+    height: 30.1%;
     position: absolute;
 }
 
-.refLuffy{
+.refLuffy {
     position: absolute;
     width: 15%;
-    bottom: 415px;
-    right: 935px;
+    bottom: 70svh;
+    right: 71vw;
     transform: rotate(-45deg);
 }
 
-.carosel{
+.carosel {
     display: flex;
     width: 60%;
     height: 80%;
@@ -104,7 +105,7 @@ main .summary{
     box-shadow: 0px 0px 30px 5px #1A1A1A;
 }
 
-.carosel_texts{
+.carosel_texts {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -115,48 +116,48 @@ main .summary{
     border-radius: 20px 0 0 20px;
 }
 
-.carosel_texts img{
+.carosel_texts img {
     width: 50%;
 }
 
-.carosel_texts p{
+.carosel_texts p {
     font-size: 18px;
     margin: 0 20px;
 }
 
-.carosel_imgs{
+.carosel_imgs {
     border-radius: 0 20px 20px 0;
     border-bottom: 2px solid #000000;
     border-right: 2px solid #000000;
     border-top: 2px solid #000000;
 }
 
-.carosel_imgs img{
+.carosel_imgs img {
     width: 100%;
     height: 100%;
     border-radius: 0 20px 20px 0;
 }
 
 
-.chars{
+.chars {
     height: 899px;
     background-color: #011126;
 }
 
-.charsAbout{
+.charsAbout {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.chars h2{
+.chars h2 {
     text-align: center;
     padding: 20px;
     border-bottom: 2px solid #FFFFFF;
     color: #FFFFFF;
 }
 
-.charsIcons{
+.charsIcons {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -164,86 +165,86 @@ main .summary{
     margin: 50px 0;
 }
 
-.charsIcons div{
+.charsIcons div {
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
 
-.charsIcons img{
+.charsIcons img {
     width: 80px;
     transition: ease-in-out 0.5s;
 }
 
-.charsIcons #jollyroger_luffy:hover{
+.charsIcons #jollyroger_luffy:hover {
     cursor: pointer;
     filter: drop-shadow(0 0 5px #FF0000);
 }
 
-.charsIcons #jollyroger_zoro:hover{
+.charsIcons #jollyroger_zoro:hover {
     cursor: pointer;
     filter: drop-shadow(0 0 5px #00FF00);
 }
 
-.charsIcons #jollyroger_nami:hover{
+.charsIcons #jollyroger_nami:hover {
     cursor: pointer;
     filter: drop-shadow(0 0 5px #FDAE04);
 }
 
-.charsIcons #jollyroger_usopp:hover{
+.charsIcons #jollyroger_usopp:hover {
     cursor: pointer;
     filter: drop-shadow(0 0 5px #7E6B09);
 }
 
-.charsIcons #jollyroger_sanji:hover{
+.charsIcons #jollyroger_sanji:hover {
     cursor: pointer;
     filter: drop-shadow(0 0 5px #FFFF00);
 }
 
-.charsIcons #jollyroger_chopper:hover{
+.charsIcons #jollyroger_chopper:hover {
     cursor: pointer;
     filter: drop-shadow(0 0 5px #E998DE);
 }
 
-.charsIcons #jollyroger_robin:hover{
+.charsIcons #jollyroger_robin:hover {
     cursor: pointer;
     filter: drop-shadow(0 0 5px #A72AFA);
 }
 
-.charsIcons #jollyroger_franky:hover{
+.charsIcons #jollyroger_franky:hover {
     cursor: pointer;
     filter: drop-shadow(0 0 5px #13E3F7);
 }
 
-.charsIcons #jollyroger_brook:hover{
+.charsIcons #jollyroger_brook:hover {
     cursor: pointer;
     filter: drop-shadow(0 0 5px #6d6d6d);
 }
 
-.charsIcons #jollyroger_jinbe:hover{
+.charsIcons #jollyroger_jinbe:hover {
     cursor: pointer;
     filter: drop-shadow(0 0 5px #0000FF);
 }
 
-.charsDescription{
+.charsDescription {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 90%;
     height: 75vh;
     padding: 0 40px;
-    background: rgb(212,194,170);
-    background: radial-gradient(circle, rgba(212,194,170,1) 0%, rgba(165,139,118,1) 100%);
+    background: rgb(212, 194, 170);
+    background: radial-gradient(circle, rgba(212, 194, 170, 1) 0%, rgba(165, 139, 118, 1) 100%);
     border: 2px solid #110000;
     box-shadow: 0 0 10px 0 #555555;
 }
 
-.poster img{
+.poster img {
     width: 20vw;
     border: 3px solid #38261A;
 }
 
-.weapon img{
+.weapon img {
     width: 207px;
     height: 219px;
     border: 3px solid #38261A;
@@ -251,44 +252,44 @@ main .summary{
 }
 
 .description,
-.weapon{
+.weapon {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.description{
+.description {
     width: 80%;
     margin: 0 40px;
 }
 
-.description p{
+.description p {
     margin-top: 10px;
     text-align: center;
 }
 
 .description h3,
-.weapon h3{
+.weapon h3 {
     font-weight: 400;
 }
 
-.author{
+.author {
     display: flex;
     justify-content: center;
     background-color: #011126;
 }
 
-.author > div{
+.author>div {
     width: 90%;
     display: flex;
     justify-content: center;
 }
 
-.authorImage{
+.authorImage {
     width: 30%;
 }
 
-.authorImage img{
+.authorImage img {
     width: 100%;
     height: 100%;
     border-radius: 32px 0 0 32px;
@@ -297,7 +298,7 @@ main .summary{
     border-left: 1px solid #FFFFFF;
 }
 
-.authorDescription{
+.authorDescription {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -310,58 +311,58 @@ main .summary{
     border-right: 1px solid #FFFFFF;
 }
 
-.authorDescription h2{
+.authorDescription h2 {
     margin-top: 20px;
     text-align: center;
     color: #FFFFFF;
 }
 
-.authorDescription p{
+.authorDescription p {
     font-size: 18px;
     color: #FFFFFF;
     margin: 5px 30px;
 }
 
-.authorDescription img{
+.authorDescription img {
     width: 80%;
 }
 
-.extras{
+.extras {
     height: 650px;
     background-color: #011126;
 }
 
-.refGoku{
+.refGoku {
     background-color: #011126;
 }
 
-.refGoku img{
+.refGoku img {
     width: 100%;
 }
 
-.refBrookChopper{
+.refBrookChopper {
     display: flex;
     justify-content: space-between;
     background-color: #011126;
 }
 
-.refBrookChopper img:nth-child(1){
+.refBrookChopper img:nth-child(1) {
     width: 5%;
     transform: rotateY(180deg);
     width: 5%;
 }
 
-.refBrookChopper img:nth-child(2){
+.refBrookChopper img:nth-child(2) {
     width: 10%;
 }
 
-.extras{
+.extras {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.extras .tabs{
+.extras .tabs {
     width: 85vw;
     height: 520px;
     display: flex;
@@ -369,7 +370,7 @@ main .summary{
 }
 
 .extras .tabs .sign,
-.extras .tabs .guide{
+.extras .tabs .guide {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -381,11 +382,11 @@ main .summary{
 }
 
 .extras .tabs .sagas:hover,
-.extras .tabs .guide:hover{
+.extras .tabs .guide:hover {
     cursor: pointer;
 }
 
-.extras .tabs .sign p{
+.extras .tabs .sign p {
     display: flex;
     align-items: center;
     height: 100%;
@@ -393,7 +394,7 @@ main .summary{
     padding: 0 10px;
 }
 
-.extras .tabs .sign button{
+.extras .tabs .sign button {
     width: 120px;
     padding: 15px;
     border: none;
@@ -404,25 +405,25 @@ main .summary{
     font-size: 20px;
 }
 
-.extras .tabs .sign button:hover{
+.extras .tabs .sign button:hover {
     cursor: pointer;
     box-shadow: 0 0 10px 0 #000000;
 }
 
 .extras .tabs .sign h3,
-.extras .tabs .guide h3{
+.extras .tabs .guide h3 {
     padding: 20px;
     text-align: center;
 }
 
-.extras .tabs .guide img{
+.extras .tabs .guide img {
     height: 453px;
     width: 100%;
     object-fit: cover;
     border-radius: 0 0 20px 20px;
 }
 
-.extras .tabs .sagas{
+.extras .tabs .sagas {
     display: flex;
     flex-direction: column;
     width: 355px;
@@ -432,14 +433,14 @@ main .summary{
     box-shadow: 0 0 25px 0 rgba(000, 000, 000, 75%);
 }
 
-.extras .tabs .sagas h4{
+.extras .tabs .sagas h4 {
     padding: 10px 40px;
     background-color: #3DADD9;
     border-radius: 20px 20px 0 0;
     text-align: center;
 }
 
-footer{
+footer {
     height: 12vh;
     display: flex;
     justify-content: center;

@@ -1,17 +1,17 @@
 *,
 *::after,
-*::before{
+*::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     height: 100vh;
     font-size: 20px;
 }
 
-header{
+header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,30 +23,30 @@ header{
     position: relative;
 }
 
-header ul{
+header ul {
     display: flex;
     align-items: center;
 }
 
-header ul li{
+header ul li {
     display: flex;
     list-style: none;
     margin: 0 20px;
     text-decoration: none;
 }
 
-header ul li a{
+header ul li a {
     text-decoration: none;
     color: #FFFFFF;
 }
 
-header div:last-child .navbar ul li:last-child a{
+header div:last-child .navbar ul li:last-child a {
     background-color: #011126;
     padding: 10px;
     border-radius: 15px;
 }
 
-header ul li a::after{
+header ul li a::after {
     display: block;
     content: "";
     width: 0;
@@ -54,12 +54,12 @@ header ul li a::after{
     background-color: #FFFFFF;
 }
 
-header ul li a:hover::after{
+header ul li a:hover::after {
     width: 100%;
     transition: ease-in-out 0.5s;
 }
 
-main{
+main {
     height: 90vh;
     display: flex;
     justify-content: center;
@@ -67,7 +67,7 @@ main{
     background: url('../../assets/images/mugiwaras_Back.jpg') 0/cover no-repeat;
 }
 
-.container_cadastro{
+.container_cadastro {
     width: 80vw;
     height: 95%;
     border: 2px solid #000000;
@@ -75,44 +75,44 @@ main{
     background-color: #FFFFFF;
 }
 
-.container_cadastro .cadastro{
-    padding: 50px 100px 0 100px;
-    height: 84%;
+.container_cadastro .cadastro {
+    padding: 40px 100px 0 100px;
+    height: 88%;
 }
 
-.container_cadastro .cadastro .infos{
+.container_cadastro .cadastro .infos {
     display: flex;
     justify-content: space-between;
 }
 
-.container_cadastro .cadastro .infos .inputs div{
+.container_cadastro .cadastro .infos .inputs div {
     display: flex;
     align-items: flex-end;
     height: 32px;
     margin-top: 20.5px;
 }
 
-.container_cadastro .cadastro .infos .inputs div:nth-child(7) label{
+.container_cadastro .cadastro .infos .inputs div:nth-child(7) label {
     margin-left: 0;
 }
 
-.container_cadastro .cadastro .infos .inputs{
+.container_cadastro .cadastro .infos .inputs {
     width: 300px;
     margin-right: 15px;
 }
 
 .container_cadastro .cadastro .infos .inputs p,
-.container_cadastro .cadastro .infos .iconSelect p{
+.container_cadastro .cadastro .infos .iconSelect p {
     font-size: 17px;
     margin-top: 5px;
     color: #FFFFFF;
 }
 
-.container_cadastro .cadastro .infos .inputs div label{
+.container_cadastro .cadastro .infos .inputs div label {
     margin-left: 10px;
 }
 
-.container_cadastro .cadastro .infos .inputs input{
+.container_cadastro .cadastro .infos .inputs input {
     width: 100%;
     font-size: 18px;
     margin-top: 5px;
@@ -121,26 +121,26 @@ main{
     border-radius: 10px;
 }
 
-.container_cadastro .cadastro .infos .iconSelect{
+.container_cadastro .cadastro .infos .iconSelect {
     width: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.container_cadastro .cadastro .infos .iconSelect label{
+.container_cadastro .cadastro .infos .iconSelect label {
     text-align: center;
     width: 80%;
 }
 
-.container_cadastro .cadastro .infos .iconSelect img{
+.container_cadastro .cadastro .infos .iconSelect img {
     width: 145px;
     height: 205px;
     margin: 11px 0;
     box-shadow: 0 0 10px 0;
 }
 
-.container_cadastro .cadastro .infos .iconSelect select{
+.container_cadastro .cadastro .infos .iconSelect select {
     font-size: 18px;
     margin-top: 15px;
     padding: 5px 15px;
@@ -149,15 +149,14 @@ main{
     width: 95%;
 }
 
-.container_cadastro .botao{
+.container_cadastro .botao {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 10%;
-    margin: 10px 0;
 }
 
-.container_cadastro .botao button{
+.container_cadastro .botao button {
     height: 50px;
     border: none;
     color: #FFFFFF;
@@ -167,7 +166,7 @@ main{
     font-size: 20px;
 }
 
-.container_cadastro .botao p{
+.container_cadastro .botao p {
     margin-left: 15px;
     font-size: 22px;
 }
@@ -175,6 +174,6 @@ main{
 .container_cadastro .botao button:hover,
 .container_cadastro .cadastro .infos .iconSelect select:hover,
 .container_cadastro .cadastro .infos .iconSelect label:hover,
-.container_cadastro .cadastro .infos .inputs div label:hover{
+.container_cadastro .cadastro .infos .inputs div label:hover {
     cursor: pointer;
 }
