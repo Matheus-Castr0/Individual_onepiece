@@ -4,7 +4,7 @@ function load() {
     window.onload = plotarKPIs()
     window.onload = buscarQtdEscolhidos()
     window.onload = buscarQtdEpisodios()
-    window.onload = definirNome()
+    window.onload = definirInfos()
 
     function buscarQtdEscolhidos() {
         fetch("http://localhost:3333/banco/qtdEscolhidos").then(res => {
@@ -108,9 +108,12 @@ function load() {
         })
     }
 
-    function definirNome() {
+    function definirInfos() {
         var nome = sessionStorage.getItem('NOME_USUARIO')
+        var personagem = sessionStorage.getItem('PERSONAGEM')
+
         nomeUsuario.innerHTML = `Olá, ${nome}`
+        iconeUsuario.innerHTML = `<img src="../../assets/images/icons_users/icon${personagem}.png">`
     }
 }
 
