@@ -59,11 +59,11 @@ header {
     width: 0;
     height: 2px;
     background-color: #FFFFFF;
+    transition: ease-in-out 0.5s;
 }
 
 .navbar ul li a:hover::after {
     width: 100%;
-    transition: ease-in-out 0.5s;
 }
 
 main {
@@ -427,7 +427,7 @@ main .summary {
     display: flex;
     flex-direction: column;
     width: 355px;
-    background-image: url('../../assets/images/posters_sagas/alabasta.jpg');
+    background-image: url('../../assets/images/posters_sagas/alabasta.png');
     background-size: cover;
     border-radius: 20px;
     box-shadow: 0 0 25px 0 rgba(000, 000, 000, 75%);
